@@ -18,6 +18,9 @@
   <!-- Dashboard theme CSS-->
   <link href="css/dashboard.css" rel="stylesheet">
 
+   <!--Flat UI CSS-->
+  <link href="flat-ui/dist/css/flat-ui.css" rel="stylesheet">
+
   <!-- Alicia's custom CSS-->
   <link href="css/custom.css" rel="stylesheet">
 
@@ -44,7 +47,7 @@
               <span class="icon-bar"></span>
             </button>
             <!-- need to replace logo here -->
-            <a class="navbar-brand" href="#"><img src="assets/pizzafylogo.svg" alt="Pizzafy.me"/ ><h1>Pizzafy</h1></a>
+            <a class="navbar-brand" href="#"><img src="assets/pizzafylogo2.svg" alt="Pizzafy.me"/ ><h1>Pizzafy</h1></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -58,7 +61,7 @@
         </div>
       </nav>
 
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -75,8 +78,7 @@
   </div>
 </div>
 
-
-      <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-1 main">
+      <main class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-1 main">
         <h1 class="page-header">My Pizza Profile</h1>
         <div class="row">
           <h2 class="username">Name</h2>
@@ -389,10 +391,10 @@
 
 
 
-    </div> <!--cols main-->
+    </main> <!--cols main-->
 
 
-
+    <!-- EDDIE!!! getting to 404s on the scripts below because I haven't downloaded them arghhh -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -400,9 +402,12 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+     <script src="/flat-ui/dist/js/flat-ui.min.js"></script>
     <script>
     $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+  $(':checkbox').radiocheck();
+  $(':radio').radiocheck();
 })
     </script>
   </body>
