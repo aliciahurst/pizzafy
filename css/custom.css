@@ -4,11 +4,7 @@
 
 .navbar-brand {
 	text-indent: -99999px;
-	padding: 0 15px;
-}
-
-.content {
-	padding: 0 4rem;
+	padding: 5px 15px;
 }
 
 img {
@@ -19,6 +15,10 @@ img {
 	border: 0;
 }
 
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
 .username, .pizza-number {
 	display: inline-block;
 }
@@ -29,10 +29,34 @@ img {
 
 .profile-pic {
 	border-radius: 50%;
-	width: 150px;
-	height: 150px;
+	width: auto;
+	height: 100px;
 	padding: 5px;
 	border: 1px solid #f7f7f7;
+	display: inline-block;
+}
+
+.page-title {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	line-height: 1.2;
+	vertical-align: middle;
+}
+
+@media (max-width: 1000px) {
+	.profile-pic {
+		display: block;
+		margin: 0 auto;
+	}
+	.page-title {
+		display: block;
+		text-align: center;
+	}
+}
+
+.page-header {
+	margin-bottom: 10px;
+	vertical-align: middle;
 }
 
 .form-horizontal .control-label {
@@ -67,4 +91,12 @@ img {
 .notes textarea {
 	width: 50%;
 	height: 200px;
+}
+
+h3 {
+	margin-top: 10rem;
+}
+
+h3:first-of-type {
+	margin-top: 40px;
 }
