@@ -54,7 +54,12 @@ img {
 	display: block;
 }
 
-.toppings-love .checkbox {
+.toppings-love .checkbox, .crust-prefs .radio {
 	width: 33%;
 	display: inline-block;
+}
+
+.notes textarea {
+	width: 50%;
+	height: 200px;
 }

@@ -79,8 +79,8 @@
       <div class="col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-1 main">
         <h1 class="page-header">My Pizza Profile</h1>
         <div class="row">
-          <h2 class="username">{{Name}}</h2>
-          <button type="button" class="badge pizza-number" data-toggle="tooltip" data-placement="top" title="Your Pizza Number: How many slices of pizza you eat">{{Pizza Number}}</button>
+          <h2 class="username">Name</h2>
+          <button type="button" class="badge pizza-number" data-toggle="tooltip" data-placement="top" title="Your Pizza Number: How many slices of pizza you eat">2</button>
         </div>
         <!-- Profile picture requirements: Must be able to crop to square -->
           <img src="assets/profilepicture.jpg" class="profile-pic" alt="{{Username}} | Pizzafy" />
@@ -148,7 +148,7 @@
 </div>
 
 <!-- Toppings Love -->
-<!-- This needs to be reorganized majorly -->
+<!-- This needs to be reorganized majorly, by type of topping -->
 <h3> Toppings</h3>
 <p>Tell us about the toppings you love and hate!</p>
 <div class="toppings-love row">
@@ -288,12 +288,83 @@
 </div>
 
 <!-- Toppings Hate -->
+<!-- Predictive text tokens based on the same above inputs -->
+<div class="toppings-hate row">
 <div class="control-group">
   <label class="control-label" for="hates">Hates</label>
   <div class="controls">
     <input id="hates" name="hates" type="text" placeholder="" class="input-xlarge">
     <p class="help-block">Which toppings will you not eat, no matter what?</p>
   </div>
+</div>
+</div>
+
+<!-- Crust preferences -->
+<!-- Multiple Radios (inline) -->
+<h3>Crust</h3>
+<div class="crust-prefs row">
+<div class="control-group">
+  <div class="controls">
+    <label class="radio inline" for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="Thin crust" checked="checked">
+      Thin crust
+    </label>
+    <label class="radio inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="Regular crust">
+      Regular crust
+    </label>
+    <label class="radio inline" for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="Deep dish">
+      Deep dish
+    </label>
+    <label class="radio inline" for="radios-3">
+      <input type="radio" name="radios" id="radios-3" value="Neapolitan">
+      Neapolitan
+    </label>
+    <label class="radio inline" for="radios-4">
+      <input type="radio" name="radios" id="radios-4" value="Sicilian">
+      Sicilian
+    </label>
+    <label class="radio inline" for="radios-5">
+      <input type="radio" name="radios" id="radios-5" value="No preference">
+      No preference
+    </label>
+  </div>
+</div>
+</div>
+
+<!-- Dietary restrictions -->
+<h3>Dietary Restrictions</h3>
+<p>Got dietary restrictions? We got you covered!</p>
+<div class="dietary row">
+<div class="control-group">
+  <div class="controls">
+    <label class="checkbox" for="Dietary-0">
+      <input type="checkbox" name="Dietary" id="Dietary-0" value="Vegan">
+      Vegan
+    </label>
+    <label class="checkbox" for="Dietary-1">
+      <input type="checkbox" name="Dietary" id="Dietary-1" value="Vegetarian">
+      Vegetarian
+    </label>
+    <label class="checkbox" for="Dietary-2">
+      <input type="checkbox" name="Dietary" id="Dietary-2" value="Gluten-Free">
+      Gluten-Free
+    </label>
+  </div>
+</div>
+</div>
+
+<!-- Notes -->
+<h3>Notes</h3>
+<p>Do you have any additional comments about your pizza preferences that you would want the organizer of any party to attend to know? Allergies? Requests? Something we didn't cover here?</p>
+<div class="notes row">
+<div class="control-group">
+  <label class="control-label" for="notes"></label>
+  <div class="controls">                     
+    <textarea id="notes" name="notes"></textarea>
+  </div>
+</div>
 </div>
 
 
