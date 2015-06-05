@@ -14,3 +14,47 @@ img {
 	border: 0;
 }
 
+.username, .pizza-number {
+	display: inline-block;
+}
+
+.edit_profile-pic {
+	display: block;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+	border: 1px solid #f7f7f7;
+}
+
+.form-horizontal .control-label {
+	text-align: left;
+}
+
+.dob div {
+	display: inline-block;
+}
+
+.dob .control-label {
+	display: block;
+}
+
+.dob .controls {
+
+}
+
+.input-mini {
+	width: 50px;
+}
+
+.group-title {
+	display: block;
+}
+
+.toppings-love .checkbox {
+	width: 33%;
+	display: inline-block;
+}
